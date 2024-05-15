@@ -13,10 +13,10 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  background-image: url('img/fondo.png');
+  background-image: url('img/fondo_no_borde.png');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Esto mantiene la imagen fija mientras se desplaza la página */
+  /*background-attachment: fixed;  Esto mantiene la imagen fija mientras se desplaza la página */
 }
 
 @media only screen and (min-width: 1025px){
@@ -256,15 +256,16 @@ main .btn:hover {
   width: 800px;
   height: auto;
   object-fit: cover;
+  padding-bottom: 15rem;
 }
 
 
 @media only screen and (max-width: 490px) {
   /*estilo celular*/
   .nombres{
-    padding-top: 3rem;
+    padding-top: 0;
     width: 300px; /* Ancho de la imagen */
-    
+    padding-bottom: 0;/*quitando el espacio de los nombres y el carrusel*/
   }
   
 }
@@ -469,3 +470,9 @@ button:hover .icon-3 {
   }
 }
 /*fin video pop up*/
+
+/*quitando el subrayado*/
+a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: rgb(255, 255, 255); /* Color del texto del enlace */
+}
